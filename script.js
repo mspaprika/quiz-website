@@ -40,41 +40,40 @@ let scoreB = "";
 let scoreC = "";
 let count = 0;
 
+// button that starts the quiz
 startButton.addEventListener("click", function() {
     firstText.style.visibility = "hidden";
     images.style.visibility = "visible";
-    question.innerHTML = "Your hobby is:"
-    quizPicture.src = "pics/simpsons-fun.jpg";
+    question.innerHTML = questions[0].question;
+    quizPicture.src = questions[0].picture;
 });
 
+// checks which string is the longest and returns winning letter 
 const checkScore = () => {
     if (scoreA.length >= scoreB.length && scoreA.length >= scoreC.length) {
-        console.log("Most A");
         return "a";
     } else if (scoreB.length >= scoreA.length && scoreB.length >= scoreC.length) {
-        console.log("Most B");
         return "b";
     } else {
-        console.log("Most C");
         return "c";
     }
 }
 
 const questions = [
-    {
+    {  // 1
         question: "Your hobby is:",
-        picture: ""
+        picture: "pics/simpsons-fun.jpg"
     },
-    {
+    {  // 2
         question: "On TV you would watch:",
         answer: {
             a: "Reality shows / drama",
             b: "Action / Adventure",
-            c: "TV ? I don't have one"
+            c: "I turned my TV into aquarium"
         },
         picture: "pics/simpsons-tv2.jfif"
     },
-    {
+    {  // 3
         question: "Your favourite animal:",
         answer: {
             a: "Chimps <br> are cute",
@@ -88,16 +87,16 @@ const questions = [
         },
         picture: "pics/sapien.jpg"
     },
-    {
+    {  // 4
         question: "Your thoughts about food:",
         answer: {
-            a: "Got food?",
+            a: "Got food?  	🍗 🍕 🌭 🥙 🥨 🦞 🧁 🎂 🥣",
             b: "I am allergic to everything",
             c: "I like cooking not eating"
         },
         picture: "pics/homer-donuts2.jfif"
     },
-    {
+    {  // 5
         question: "Saturday evening. You are in:",
         answer: {
             a: "Cozy king <br> size bed",
@@ -111,16 +110,16 @@ const questions = [
         },
         picture: "pics/homer-stars.jfif"
     },
-    {
+    {  // 6
         question: "Your dream job:",
         answer: {
-            a: "Working in nuclear power plant",
-            b: "Any job, as long I help people",
-            c: "Smart people don't work"
+            a: "Work in nuclear power plant",
+            b: "Own a nuclear power plant",
+            c: "Sell donuts 🍩"
         },
         picture: "pics/homer-work.jfif"
     },
-    {
+    {  // 7
         question: "Your favourite phrase:",
         answer: {
             a: "Ha ha !",
@@ -134,7 +133,7 @@ const questions = [
         },
         picture: "pics/comic2.jfif"
     },
-    {
+    {  // 8
         question: "Your holiday destination:",
         answer: {
             a: "The further the better, prefferably Mars",
@@ -143,7 +142,7 @@ const questions = [
         }, 
         picture: "pics/homer-space.jfif"
     },
-    {
+    {  // 9
         question: "Your dream:",
         answer: {
             a: "Donuts is <br> all I need",
@@ -157,65 +156,99 @@ const questions = [
         },
         picture: "pics/homer-fun.jpg"
     },
-    {
+    {  // 10
         question: "Your biggest fear:",
         answer: {
             a: "My own shadow - I just can't outrun it!",
             b: "Going to hell after death",
-            c: "What if my dog eats my homework..."
+            c: "Cobras!!!  🐍"
         },
         picture: "pics/hoer-bart.jpg"
     }            
 ]
 
 const answers = [
-    {
+    {  // 1
         "title": "Homer",
         "text": "<br>Mmmmmm.... donuts",
         "picture": "pics/homer-mmmm.jfif"
     },
-    {
+    {  // 2
         "title": "Marge",
         "text": "<br>Why I'm so funny when there's noone around?",
         "picture": "pics/marge2.png"
-    },
+    },  // 3
     {
         "title": "Bart",
         "text": "<br>Eat my shorts!",
         "picture": "pics/bart2.jfif"
     },
-    {
+    {  // 4
         "title": "Lisa",
         "text": "<br>For once in your life, be cool",
         "picture": "pics/lisa-port.jfif"
     },
-    {
+    {  // 5
         "title": "Moe",
         "text": "<br>I'll eat a booger",
         "picture": "pics/moe-pic.jfif"
     },
-    {
+    {  // 6
         "title": "Millhouse",
         "text": "<br>My mom says I'm cool",
         "picture": "pics/millhouse.jpg"
     },
-    {
+    {  // 7
         "title": "Skinner",
         "text": "<br>Steamed hams for dinner please!",
         "picture": "pics/skinn.png"
     },
-    {
+    {  // 8
         "title": "Ralph",
         "text": "<br>I was done before we came in",
         "picture": "pics/ralph-thinks.jpg"
     },
-    {
+    {  // 9
         "title": "Apu",
         "text": "<br>Thank you, come again!",
         "picture": "pics/apu.jpg"
-    }
+    },
+    {  // 10
+        "title": "Cletus",
+        "text": "<br>Hey a head! Oh, Dang it's been scooped out",
+        "picture": "pics/cletus.jpg"
+    },
+    {  // 11
+        "title": "Lenny",
+        "text": "<br>Idiots? Why do we re-elect this guy?>",
+        "picture": "pics/lenny.jpg"
+    },
+    {  // 12
+        "title": "Mr. Burns",
+        "text": "<br>Release the hounds !",
+        "picture": "pics/burns-alien.png"
+    },
+    {  // 13
+        "title": "Clancy Wiggum",
+        "text": "<br>We're surface police. What you need is sewer cops",
+        "picture": "pics/wiggum.jfif"
+    },
+    {  // 14
+        "title": "Barney",
+        "text": "<br>You should always drink to enhance you social skills",
+        "picture": "pics/barney2.png"
+    },
+    {  // 15
+        "title": "Abe Simpson",
+        "text": "<br>My Homer is not a Communist. He may be a liar,an idiot, a Communist, but he is NOT a porn star!",
+        "picture": "pics/abe-angry2.jfif"
+    },
+
+    
+
 ]
 
+// last function to run , displays the answer - 3 cards
 const displayAnswer = (score) => {
 
     quiz.style.visibility = "hidden";
@@ -255,9 +288,9 @@ const displayAnswer = (score) => {
                 cardImage2.src = answers[8].picture;
                 cardTitle2.innerHTML = answers[8].title;
                 cardText2.innerHTML = answers[8].text;
-                cardImage3.src = answers[6].picture;
-                cardTitle3.innerHTML = answers[6].title;
-                cardText3.innerHTML = answers[6].text;
+                cardImage3.src = answers[9].picture;
+                cardTitle3.innerHTML = answers[9].title;
+                cardText3.innerHTML = answers[9].text;
             } else {
                 cardImage1.src = answers[7].picture;
                 cardTitle1.innerHTML = answers[7].title;
@@ -265,9 +298,9 @@ const displayAnswer = (score) => {
                 cardImage2.src = answers[5].picture;
                 cardTitle2.innerHTML = answers[5].title;
                 cardText2.innerHTML = answers[5].text;
-                cardImage3.src = answers[4].picture;
-                cardTitle3.innerHTML = answers[4].title;
-                cardText3.innerHTML = answers[4].text;
+                cardImage3.src = answers[10].picture;
+                cardTitle3.innerHTML = answers[10].title;
+                cardText3.innerHTML = answers[10].text;
             }
             break;
             case "c":
@@ -275,22 +308,24 @@ const displayAnswer = (score) => {
                 cardImage1.src = answers[2].picture;
                 cardTitle1.innerHTML = answers[2].title;
                 cardText1.innerHTML = answers[2].text;
-                cardImage2.src = answers[4].picture;
-                cardTitle2.innerHTML = answers[4].title;
-                cardText2.innerHTML = answers[4].text;
-                cardImage3.src = answers[5].picture;
-                cardTitle3.innerHTML = answers[5].title;
-                cardText3.innerHTML = answers[5].text;
+                cardImage2.src = answers[0].picture;
+                cardTitle2.innerHTML = answers[0].title;
+                cardText2.innerHTML = answers[0].text;
+                cardImage3.src = answers[11].picture;
+                cardTitle3.innerHTML = answers[11].title;
+                cardText3.innerHTML = answers[11].text;
             } else {
-                cardImage1.src = answers[3].picture;
-                cardTitle1.innerHTML = answers[3].title;
-                cardText1.innerHTML = answers[3].text;
-                cardImage2.src = answers[7].picture;
-                cardTitle2.innerHTML = answers[7].title;
-                cardText2.innerHTML = answers[7].text;
-                cardImage3.src = answers[1].picture;
-                cardTitle3.innerHTML = answers[1].title;
-                cardText3.innerHTML = answers[1].text;
+                cardImage1.src = answers[14].picture;
+                cardTitle1.innerHTML = answers[14].title;
+                cardText1.innerHTML = answers[14].text;
+                cardImage2.src = answers[13].picture;
+                cardTitle2.innerHTML = answers[13].title;
+                cardText2.innerHTML = answers[13].text;
+                cardImage3.src = answers[12].picture;
+                cardTitle3.innerHTML = answers[12].title;
+                cardText3.innerHTML = answers[12].text;
+
+                cardText1.style.fontSize = "smaller";
             }
             break;
             default:  
@@ -298,8 +333,11 @@ const displayAnswer = (score) => {
     }
 }
 
+// button that changes the screen to images 
 nextButton.addEventListener("click", function() {
-    console.log(answers[0].title);
+    // when last question is reached, function checkScore is called and 
+    // its return value is assigned to a variable, which is 
+    // then passed as argument to displayAnswer function
     if (count == 9) {
         const finalScore = checkScore();
         displayAnswer(finalScore);
@@ -323,19 +361,22 @@ nextButton.addEventListener("click", function() {
     let options = document.getElementsByName('options');
     let selected = ""; 
     
-
+    // get value from selected radio button
     for(let i = 0; i < options.length; i++){
         if(options[i].checked){
             selected = options[i].value;
         }
     }
 
+    // add value to the score
     addScore(selected);   
     
 });
 
+// image is a button and changes the screen to radio buttons
 images.addEventListener("click", function() {
     
+    // before last radios launches the button apearance needs to change
     if (count == 9) {
         nextButton.value = "Result";
         nextButton.style.backgroundColor = "#997a8d";
@@ -356,8 +397,10 @@ images.addEventListener("click", function() {
     
 }); 
 
+// this function is called  both via inline html and from other function, 
+// everytime a button next or image is pressed
+// it adds to score / count variables and returns them
 function addScore (value) {
-    console.log("addScore", value, "count", count);
     switch (value) {
         case "a":
             scoreA += "a"
@@ -374,7 +417,6 @@ function addScore (value) {
         default:
             console.log("ooops");
     }
-    console.log(scoreC, scoreB, scoreA);
     return scoreA, scoreB, scoreC, count;
 }
 
