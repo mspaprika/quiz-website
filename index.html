@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Quiz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Simpsons</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="info.html">Info</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="background" id="quiz">
+        <h1 class="header yellow"><span class="aqua">Which</span> 'Simpsons'<span class="aqua"> Character</span> you are
+            <span class="aqua">? </span>
+        </h1>
+
+        <!-- container for quiz questions only -->
+        <div class="quiz-container" id="quiz-container">
+            <div class="quiz">
+            </div>
+            <img class="quiz-pic" id="quiz-pic" src="pics/simpsons.jfif">
+            <div class="question" id="question">
+                <p id="question">Are you ready ?</p>
+            </div>
+            <div class="quiz-front" id="front">
+                Let's find out ! <br> &#11088
+                <input type="button" name="submit" class="first-button" value="start" id="start">
+            </div>
+
+            <!-- a form with pictures / quiz questions -->
+            <form class="quiz-container hidden" id="images">
+                <img class="quiz-image left" id="image1" src="pics/lisa-skate.png" onclick="addScore('a')">
+                <input type="file" name="image" accept="image/*" style="display: none;">
+                <img class="quiz-image right" id="image2" src="pics/liza-sax.png" onclick="addScore('c')">
+                <input type="file" name="image" accept="image/*" style="display: none;">
+                <img class="quiz-image middle" id="image3" src="pics/lisa7.png" onclick="addScore('b')">
+                <input type="file" name="image" accept="image/*" style="display: none;">
+                <p id="label1" class="label center label-left">Outdoor<br> activities</p>
+                <p id="label2" class="label center">Read and<br>learn</p>
+                <p id="label3" class="label center label-right">Art and<br>music</p>
+            </form>
+
+            <!-- a form with radio buttons / quiz questions -->
+            <form class="grid radio hidden" id="radio">
+                <input type="radio" id="radio11" name="options" value="a" checked>
+                <label class="radio-btn" for="radio1" id="radio1">Reality show</label>
+
+                <input type="radio" id="radio22" name="options" value="b">
+                <label class="radio-btn" id="radio2" for="radio2">Action / adventure</label>
+
+                <input type="radio" id="radio33" name="options" value="c">
+                <label class="radio-btn" id="radio3" for="radio3">I don't know what TV is</label>
+
+                <input class="button" type="button" value="Next" id="next" onclick="addScore">
+            </form>
+
+        </div>
+
+        <!-- container with 3 cards / quiz answer -->
+        <div class="answer hidden" id="answer">
+            <div class="card" style="width: 14rem;">
+                <img src="pics/homer-mmmm.jfif" class="card-img-top" id="card-image1" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title center">60%</h5>
+                    <h5 class="card-title center" id="card-title-1">Moe</h5>
+                    <p class="card-text center" id="card-text1">Some quick example text to build on the card title and
+                        make up the bulk
+                        of
+                        the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 14rem;">
+                <img src="pics/scratchy.jfif" class="card-img-top" id="card-image2" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title center">30%</h5>
+                    <h5 class="card-title center" id="card-title-2">Nelson</h5>
+                    <p class="card-text center" id="card-text2">Some quick example text to build on the card title and
+                        make up the bulk
+                        of
+                        the card's content.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 14rem;">
+                <img src="pics/mill.png" class="card-img-top" id="card-image3" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title center">10%</h5>
+                    <h5 class="card-title center" id="card-title-3">Millhouse</h5>
+                    <p class="card-text center" id="card-text3">Some quick example text to build on the card title and
+                        make up the bulk
+                        of
+                        the card's content.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
