@@ -1,0 +1,208 @@
+.background {
+    position: relative;
+    background-attachment: fixed;
+    height: 250vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('pics/simps-wallpaper22.jpg');
+    background-size: cover;
+    font-family: comic sans ms;
+
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.yellow {
+    color: rgb(247, 247, 87);
+}
+
+.aqua {
+    color: aqua;
+}
+
+.header {
+    position: absolute;
+}
+
+.nav-item a {
+    color: aqua !important;
+}
+
+.container-fluid a {
+    color: yellow;
+}
+
+.quiz {
+    position: absolute;
+    color: aqua;
+    top: 90vh;
+    width: 40%;
+    height: 85vh;
+    background-color: #c4c3d0;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.quiz-pic {
+    position: absolute;
+    top: 78vh;
+    height: auto;
+    width: 60vh;
+    z-index: 1;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.question {
+    position: absolute;
+    top: 113vh;
+    height: 13vh;
+    width: auto;
+    z-index: 1;
+    font-size: xx-large;
+}
+
+.quiz-image {
+    position: absolute;
+    top: 128vh;
+    width: 18vh;
+    height: auto;
+    z-index: 1;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.quiz-image:hover {
+    width: 19vh;
+}
+
+.left {
+    left: 75vh;
+}
+
+.right {
+    right: 75vh;
+}
+
+.label-right {
+    right: 75vh;
+}
+
+.label-left {
+    left: 75vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    position: absolute;
+    z-index: 1;
+    top: 160vh;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.radio {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 130vh;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.radio-btn {
+    width: 63vh;
+    font-size: large;
+}
+
+.grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 8vh 20vh;
+    column-gap: 3vh;
+    transform: translateX(-70%);
+}
+
+.button {
+    position: absolute;
+    width: 20vh;
+    top: 30vh;
+    left: 25vh;
+    font-family: monospace;
+    background-color: #8c92ac;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.quiz-front {
+    position: absolute;
+    display: flex;
+    text-align: center;
+    z-index: 1;
+    top: 130vh;
+    font-size: xx-large;
+}
+
+.first-button {
+    position: absolute;
+    border-radius: 10%;
+    width: 20vh;
+    height: 8vh;
+    left: 10vh;
+    transform: translateY(25vh);
+    font-family: monospace;
+    background-color: #8c92ac;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.answer {
+    position: absolute;
+    top: 85vh;
+    z-index: 1;
+    display: flex;
+    gap: 10vh;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #c4c3d0 !important;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.card-img-top {
+    height: 55vh;
+    width: auto;
+    padding: 10px;
+    border-radius: 5% !important;
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.card-text {
+    font-size: larger;
+}
