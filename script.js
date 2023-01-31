@@ -170,7 +170,7 @@ const questions = [
 const answers = [
     {  // 1
         "title": "Homer",
-        "text": "<br>Mmmmmm.... donuts",
+        "text": "<br>Mmmmmm.... donuts ahhhhrrrrr",
         "picture": "pics/homer-mmmm.jfif"
     },
     {  // 2
@@ -185,7 +185,7 @@ const answers = [
     },
     {  // 4
         "title": "Lisa",
-        "text": "<br>For once in your life, be cool",
+        "text": "<br>Save the whales!",
         "picture": "pics/lisa-port.jfif"
     },
     {  // 5
@@ -200,7 +200,7 @@ const answers = [
     },
     {  // 7
         "title": "Skinner",
-        "text": "<br>Steamed hams for dinner please!",
+        "text": "<br>Steamed hams for dinner!",
         "picture": "pics/skinn.png"
     },
     {  // 8
@@ -220,12 +220,12 @@ const answers = [
     },
     {  // 11
         "title": "Lenny",
-        "text": "<br>Idiots? Why do we re-elect this guy?>",
+        "text": "<br>Idiots? Why do we re-elect this guy?",
         "picture": "pics/lenny.jpg"
     },
     {  // 12
         "title": "Mr. Burns",
-        "text": "<br>Release the hounds !",
+        "text": "<br>Release the hounds!",
         "picture": "pics/burns-alien.png"
     },
     {  // 13
